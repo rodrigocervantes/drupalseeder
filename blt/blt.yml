@@ -1,6 +1,6 @@
 project:
   machine_name: drupalseeder
-  prefix: BLT
+  prefix: DPL
   human_name: 'BLTed 8'
   profile:
     name: lightning
@@ -9,7 +9,8 @@ project:
     hostname: 'local.${project.machine_name}.com'
 git:
   default_branch: master
-  remotes: {  }
+  remotes: 
+    - 'drupalseeder@svn-6886.devcloud.hosting.acquia.com:drupalseeder.git'
 deploy:
   tag_source: true
 drush:
